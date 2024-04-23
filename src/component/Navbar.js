@@ -1,27 +1,22 @@
-import React from 'react'
-
-function Navbar() {
+const Navbar = () => {
   return (
-   <>
-    <nav className=' flex p-4 bg-orange-600 '>
-    <div className='basis-1/4'>
-        <h1><a href="">
-            The ArtStudio
-        </a></h1>
-    </div>
-    <div className='basis-1/2 border-solid w-20 mr-4 flex'>
-        <input className='w-4/5 p-1 border-none' type="search" name="search" id="search" placeholder='Search for product'  />
-        <button>search</button>
-    </div>
-        <ul className='flex basis-1/2 ml-4 '>
-          <li className='basis-1/3 '><a href="">Give Order</a></li>
-          <li className='basis-1/3'><a href="">Login</a></li>
-          <li className='basis-1/3'><a href="">Cart</a></li>
-          
-        </ul>
-    </nav>
-   </>
-  )
+      <div className=" py-4 bg-sky-950">
+          <nav className=' flex justify-center items-center py-4 transition-all text-sky-300'>
+              <div className='w-1/4 text-center'>
+                  <h1 className='text-2xl'><a href="/">The ArtStudio</a></h1>
+              </div>
+              <div className='w-1/2 border-solid border-white mr-4 flex bg-white rounded-md'>
+                  <input className='w-full m-1 p-1 border-transparent' type="text" name="search" id="search" placeholder='Search for product' />
+                  <button className='px-2 bg-sky-950'><i className="fas fa-search"></i></button>
+              </div>
+              <ul className='w-1/3 flex mx-4 ml-4'>
+                  <li className='w-1/3 text-center text-lg'><a className='px-2 py-1 rounded-md hover:bg-white' href="/">Give Order</a></li>
+                  <li className='w-1/3 text-center text-lg'><a className='px-2 py-1 rounded-md hover:bg-white' href="/">Login</a></li>
+                  <li className='w-1/3 text-center text-lg'><a className='px-2 py-1 rounded-md hover:bg-white' href="/"><i className="fas fa-shopping-cart"></i>Cart</a></li>
+              </ul>
+          </nav>
+      </div>
+  );
 }
 
-export default Navbar
+export default Navbar;
