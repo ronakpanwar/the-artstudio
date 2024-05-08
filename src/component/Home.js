@@ -97,7 +97,7 @@ const Home = () => {
             </div>
 
             {/* four container */}
-            <div className='bg-blue-200 mx-2 rounded-2xl shadow-inner relative shadow-blue-400'>
+            <div className='bg-blue-200 mx-2 rounded-2xl shadow-inner relative shadow-blue-400 '>
                 <div className=' p-8 flex justify-around items-center'>
                     <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
                     <div className='basis-1/3 text-center'>
@@ -106,8 +106,9 @@ const Home = () => {
                     <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
 
                 </div>
-  
+                <div className='px-12 py-6 '>
                 <Blockslider card1 = {card1}/> 
+                </div>
             </div>
 
         </>
