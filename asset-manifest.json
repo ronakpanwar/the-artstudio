@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/the-artstudio/static/css/main.f51cb06f.css",
-    "main.js": "/the-artstudio/static/js/main.00d537ea.js",
+    "main.css": "/the-artstudio/static/css/main.95409711.css",
+    "main.js": "/the-artstudio/static/js/main.6cb34bee.js",
     "static/js/453.eec88768.chunk.js": "/the-artstudio/static/js/453.eec88768.chunk.js",
     "static/media/fentastic2.png": "/the-artstudio/static/media/fentastic2.bb272b827c046a3b40ae.png",
     "static/media/fentastic.png": "/the-artstudio/static/media/fentastic.2262831b70aead08d545.png",
@@ -95,12 +95,12 @@
     "static/media/wall1.1.avif": "/the-artstudio/static/media/wall1.1.8a6ffb6045093a53f43c.avif",
     "static/media/logo.svg": "/the-artstudio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/the-artstudio/index.html",
-    "main.f51cb06f.css.map": "/the-artstudio/static/css/main.f51cb06f.css.map",
-    "main.00d537ea.js.map": "/the-artstudio/static/js/main.00d537ea.js.map",
+    "main.95409711.css.map": "/the-artstudio/static/css/main.95409711.css.map",
+    "main.6cb34bee.js.map": "/the-artstudio/static/js/main.6cb34bee.js.map",
     "453.eec88768.chunk.js.map": "/the-artstudio/static/js/453.eec88768.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f51cb06f.css",
-    "static/js/main.00d537ea.js"
+    "static/css/main.95409711.css",
+    "static/js/main.6cb34bee.js"
   ]
 }
