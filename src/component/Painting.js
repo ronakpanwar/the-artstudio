@@ -15,7 +15,7 @@ const Painting = () => {
                 </div>
                 <div className='grid grid-cols-3 gap-4 '>
                     {ObjectP.map((e, index) => (
-                        <Card key={index} img1={e.img1} img2={e.img2} p={e.p} price={e.price} />
+                        <Card key={index} img1={e.img2} img2={e.img1} p={e.p} price={e.price} />
                     ))}
                 </div>
             </div>

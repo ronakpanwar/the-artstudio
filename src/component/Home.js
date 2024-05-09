@@ -13,9 +13,17 @@ import p21 from '../img/HandPainting/painting2.1.webp'
 import plateImg from '../img/painting/fentastic.png';
 import fentastic2 from '../img/painting/fentastic2.png';
 import card1 from '../img/card1.webp'
+import pimg1 from '../img/product/p-img-1.webp';
+import pimg2 from '../img/product/p-img-2.webp';
+import pimg3 from '../img/product/p-img-3.webp';
+import pimg4 from '../img/product/p-img-4.webp';
 
 import SwipeFront from './tools/SwipeFront';
 import Blockslider from './tools/Blockslider';
+import SaleCard from './tools/SaleCard';
+import Reveue from './tools/Reveue';
+
+import ObjectS from '../objects/ObjectS';
 
 
 const Home = () => {
@@ -24,7 +32,7 @@ const Home = () => {
     return (
         <>
             {/* sliding image */}
-           <SwipeFront fentastic2 = {fentastic2} plateImg = {plateImg}/>
+            <SwipeFront fentastic2={fentastic2} plateImg={plateImg} />
             {/* second conatainer */}
             <div className='flex justify-evenly bg-sky-50  p-10 '>
                 <div className="p-4 ">
@@ -97,7 +105,7 @@ const Home = () => {
             </div>
 
             {/* four container */}
-            <div className='bg-blue-200 mx-2 rounded-2xl shadow-inner relative shadow-blue-400 '>
+            <div className='bg-sky-50 mx-2 rounded-2xl  relative  '>
                 <div className=' p-8 flex justify-around items-center'>
                     <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
                     <div className='basis-1/3 text-center'>
@@ -107,9 +115,63 @@ const Home = () => {
 
                 </div>
                 <div className='px-12 py-6 '>
-                <Blockslider card1 = {card1}/> 
+                    <Blockslider card1={card1} />
                 </div>
             </div>
+
+            {/* fifth container */}
+            <div className='flex-col bg-sky-50 '>
+                <div className=' p-8 flex justify-around items-center'>
+                    <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
+                    <div className='basis-1/3 text-center'>
+                        <h1 className='font-bold text-3xl'>Best Offers</h1>
+                    </div>
+                    <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
+
+                </div>
+                <div className='flex'>
+                {
+                  ObjectS.map((e , index)=>(
+                     <SaleCard key={index} img={e.img} p={e.p} oldP={e.oldP} sP={e.sP} />
+                  ))
+                }
+                    
+                </div>
+            </div>
+
+            {/*sixth container  */}
+            <div className='flex-col bg-sky-50 '>
+                <div className=' p-8 flex justify-around items-center'>
+                    <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
+                    <div className='basis-1/3 text-center'>
+                        <h1 className='font-bold text-3xl'>Customer favourites</h1>
+                    </div>
+                    <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
+
+                </div>
+                <div className='flex'>
+                   <div className='overflow-hidden group m-6' >
+                    <a href="/wall-art"><img className='transition-all ease-in duration-150 group-hover:scale-105 w-full ' src={pimg1} alt="" /></a>
+                   </div>
+                   <div className='overflow-hidden group m-6' >
+                    <a href="/wall-art"><img className='transition-all ease-in duration-150 group-hover:scale-105 w-full ' src={pimg2} alt="" /></a>
+                   </div>
+                   <div className='overflow-hidden group m-6' >
+                    <a href="/wall-art"><img className='transition-all ease-in duration-150 group-hover:scale-105 w-full ' src={pimg3} alt="" /></a>
+                   </div>
+                   <div className='overflow-hidden group m-6' >
+                    <a href="/wall-art"><img className='transition-all ease-in duration-150 group-hover:scale-105 w-full ' src={pimg4} alt="" /></a>
+                   </div>
+                </div>
+            </div>
+
+            {/* seventh container */}
+            <div className='bg-sky-50 p-6'>
+                 <div>
+                    {/* <Reveue/> */}
+                 </div>
+            </div>
+
 
         </>
     )
