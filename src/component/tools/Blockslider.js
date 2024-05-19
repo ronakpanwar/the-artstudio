@@ -37,7 +37,7 @@ export default function Blockslider(props) {
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide className='p-2'>   <div className='flex-col w-svm border-solid  border-black border-2 rounded-lg  bg-white shadow-xl mx-2'>
+                <SwiperSlide className='p-2'>   <div className='flex-col  border-solid   border-2 rounded-lg  bg-white shadow-xl mx-2'>
                         <a href=""><img className='w-full ' src={props.card1} alt="" /></a>
                         <h3 className='font-bold text-xl px-4 '>Clock</h3>
                         <h1 className=' text-2xl px-4'>6x8 custmized clocks </h1>
@@ -45,7 +45,7 @@ export default function Blockslider(props) {
                       
                     </div></SwiperSlide>
                
-                    <SwiperSlide className='p-2'>   <div className='flex-col w-svm border-solid  border-black border-2 rounded-lg  bg-white shadow-xl mx-2'>
+                    <SwiperSlide className='p-2'>   <div className='flex-col w-svm border-solid  border-2 rounded-lg  bg-white shadow-xl mx-2'>
                         <a href=""><img className='w-full ' src={props.card1} alt="" /></a>
                         <h3 className='font-bold text-xl px-4 '>Clock</h3>
                         <h1 className=' text-2xl px-4'>6x8 custmized clocks </h1>
@@ -53,7 +53,7 @@ export default function Blockslider(props) {
                        
                     </div></SwiperSlide>
                     
-                <SwiperSlide className='p-2'>   <div className='flex-col w-svm border-solid  border-black border-2 rounded-lg  bg-white shadow-xl mx-2'>
+                <SwiperSlide className='p-2'>   <div className='flex-col w-svm border-solid  border-2 rounded-lg  bg-white shadow-xl mx-2'>
                         <a href=""><img className='w-full ' src={props.card1} alt="" /></a>
                         <h3 className='font-bold text-xl px-4 '>Clock</h3>
                         <h1 className=' text-2xl px-4'>6x8 custmized clocks </h1>
@@ -61,7 +61,7 @@ export default function Blockslider(props) {
                        
                     </div></SwiperSlide>
                     
-                <SwiperSlide className='p-2'>   <div className='flex-col w-svm border-solid  border-black border-2 rounded-lg  bg-white shadow-xl mx-2'>
+                <SwiperSlide className='p-2'>   <div className='flex-col w-svm border-solid   border-2 rounded-lg  bg-white shadow-xl mx-2'>
                         <a href=""><img className='w-full ' src={props.card1} alt="" /></a>
                         <h3 className='font-bold text-xl px-4 '>Clock</h3>
                         <h1 className=' text-2xl px-4 '>6x8 custmized clocks </h1>

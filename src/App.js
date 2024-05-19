@@ -9,6 +9,7 @@ import Culture from './component/Culture';
 import Clocks from './component/Clocks';
 import Handpainting from './component/Handpainting';
 import Rooms from './component/Rooms';
+import LoginPage from './component/LoginPage';
 
 import {
   BrowserRouter as Main,
@@ -33,6 +34,7 @@ function App() {
             <Route path='/culture' element={ <Culture/> } />
             <Route path='/clocks' element={ <Clocks/> } />
             <Route path='/rooms' element={ <Rooms/> } />
+            <Route path='/login-page' element={ <LoginPage/>} />
         </Routes>
 
       </Main>
