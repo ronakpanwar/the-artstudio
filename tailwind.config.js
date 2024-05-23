@@ -4,7 +4,23 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes:{
+        widthAni:{
+          '0%':{
+            width: '0px'
+       
+          },
+         '100%':{
+            width: '100%'
+          },
+        }
+      }
+     
+    },
+    animation: {
+      widthAni: 'widthAni 0.5s ease-in-out',
+    },
   },
   plugins: [],
 }
