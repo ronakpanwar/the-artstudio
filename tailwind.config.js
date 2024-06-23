@@ -5,23 +5,33 @@ module.exports = {
   ],
   theme: {
     extend: {
-      keyframes:{
-        widthAni:{
-          '0%':{
+      keyframes: {
+        widthAni: {
+          '0%': {
             width: '0px'
-       
           },
-         '100%':{
+          '100%': {
             width: '100%'
+          }
+        },
+        fadeIn: {
+          '0%': {
+            opacity: '0'
           },
+          '100%': {
+            opacity: '1'
+          }
         }
+      },
+      animation: {
+        widthAni: 'widthAni 0.5s ease-out',
+        fadeIn: 'fadeIn 3s ease-in-out',
+      },
+      fontFamily: {
+        'Great-Vibes': ['Great Vibes'],
+        'Ubuntu': ['Ubuntu Sans'],
       }
-     
     },
-    animation: {
-      widthAni: 'widthAni 0.5s ease-in-out',
-    },
-  },
-  plugins: [],
+    plugins: [],
+  }
 }
-

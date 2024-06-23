@@ -5,7 +5,7 @@ import ObjectAP from '../objects/ObjectAP'
 const ArtPlate = () => {
   return (
    <>
-      <div className='p-4 bg-white'>
+      <div className='p-4 bg-white font-Ubuntu'>
                 <div className=' p-8 flex justify-around items-center'>
                     <div className='basis-1/3 text-center'>
                         <h1 className='font-bold text-3xl'>Plate Arts</h1>

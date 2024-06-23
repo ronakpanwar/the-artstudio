@@ -20,7 +20,7 @@ const LoginPage = () => {
 
   return (
     <>
-        <div className='p-10  overflow-hidden'>
+        <div className='p-10  overflow-hidden font-Ubuntu'>
             <div className='m-6 rounded-2xl overflow-hidden bg-sky-50 shadow-xl '>
             <div className='flex '>
                 <div className='w-full basis-3/4'>

@@ -8,7 +8,7 @@ const Card = (props) => {
       <div className='flex relative justify-center group overflow-hidden '>
         <img className='hidden transition-all ease-in duration-250 delay-200 group-hover:block hover:scale-105  w-full' src={props.img2} alt="" />
         <img className='transition-all ease-in duration-150 group-hover:hidden  w-full ' src={props.img1} alt="" />
-        <button className='hidden absolute h-12 w-4/5  bg-white bottom-2 border-solid border-slate-400 border-2  group-hover:block  '>Quick Buy</button>
+        <button className='hidden absolute h-12 w-4/5 backdrop-blur-10  bg-white/50 bottom-2  group-hover:block  '>Quick Buy</button>
       </div>
 
       <p className='py-2'>{props.p}</p>

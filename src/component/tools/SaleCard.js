@@ -8,7 +8,7 @@ const SaleCard = (props) => {
                 <div className='flex relative justify-center group overflow-hidden '>
 
                     <img className='transition-all ease-in duration-150 group-hover:scale-105  w-full ' src={props.img} alt="" />
-                    <button className='hidden absolute h-12 w-4/5  bg-white bottom-2 border-solid border-slate-400 border-2  group-hover:block  '>Quick Buy</button>
+                    <button className='hidden absolute h-12 w-4/5 backdrop-blur-10 bg-white/50 bottom-2  group-hover:block  '>Quick Buy</button>
                     <span className='absolute top-0 left-0 bg-red-700 text-white px-2 py-1'>10% off</span>
                 </div>
 

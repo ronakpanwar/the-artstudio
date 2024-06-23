@@ -69,7 +69,7 @@ const Ragister = () => {
                 </label>
 
 
-                <label htmlFor="password" className='p-2 w-3/5 m-2' >
+                <label htmlFor="password" className='p-2 w-3/5 m-1' >
                     <input className='w-full px-4 py-2 border-none focus:outline-none rounded-2xl drop-shadow-md'
                         type="password"
                         name='password'

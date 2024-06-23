@@ -3,12 +3,12 @@ import './css/styles.css'
 
 const SubNavbar = () => {
   return (
-    <div className='sticky top-0 z-10'>
+    <div className='sticky top-0 z-10 font-Ubuntu'>
       <nav className='p-1 bg-sky-100'>
         <ul className='flex items-center justify-around text-lg'>
           <li className='group transition-all duration-150 ease-in-out hover:text-blue-950  font-bold'>
             <a href="/">Home</a>
-            <div className='w-full rounded-2xl p-0.5  group-hover:animate-widthAni group-hover:bg-blue-950 ' ></div>
+            <div className='w-full rounded-2xl p-0.5  group-hover:animate-widthAni group-hover:bg-black' ></div>
           </li>
           <li className='group transition-all duration-150 ease-in-out hover:text-blue-950  font-bold'>
             <a href="/painting">Painting</a>

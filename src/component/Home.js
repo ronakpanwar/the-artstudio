@@ -12,7 +12,7 @@ import wall1 from '../img/wall/wall5.webp'
 import p21 from '../img/HandPainting/painting2.1.webp'
 import plateImg from '../img/painting/fentastic.png';
 import fentastic2 from '../img/painting/fentastic2.png';
-import card1 from '../img/card1.webp'
+
 import pimg1 from '../img/product/p-img-1.webp';
 import pimg2 from '../img/product/p-img-2.webp';
 import pimg3 from '../img/product/p-img-3.webp';
@@ -24,17 +24,22 @@ import SaleCard from './tools/SaleCard';
 import Reveue from './tools/Reveue';
 
 import ObjectS from '../objects/ObjectS';
+import CustomersR from './CustomersR';
 
 
 const Home = () => {
 
+    const image = [
+        plateImg,
+        fentastic2
+    ]
 
     return (
         <>
             {/* sliding image */}
-            <SwipeFront fentastic2={fentastic2} plateImg={plateImg} />
+            <SwipeFront image={image} />
             {/* second conatainer */}
-            <div className='flex justify-evenly bg-sky-50  p-10 '>
+            <div className='flex justify-evenly bg-sky-50  p-10 font-Ubuntu'>
                 <div className="p-4 ">
                     <a href=""> <img src={p1} alt="" className='shadow-lg transition-all ease-in-out duration-200 rounded-full hover:scale-105  ' width={130} /></a>
                 </div>
@@ -59,12 +64,12 @@ const Home = () => {
             </div>
 
             {/* thired container */}
-            <div className='bg-sky-50 flex-col justify-center'>
+            <div className='bg-sky-50 flex-col justify-center font-Ubuntu'>
 
                 <div className='flex p-8 justify-around items-center'>
                     <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
                     <div className='basis-1/3 text-center'>
-                        <h1 className='font-bold text-4xl'>Best Arts</h1>
+                        <h1 className='font-bold text-4xl '>Best Arts</h1>
                     </div>
                     <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
 
@@ -105,7 +110,7 @@ const Home = () => {
             </div>
 
             {/* four container */}
-            <div className='bg-sky-50 mx-2 rounded-2xl  relative  '>
+            <div className='bg-sky-50 mx-2 rounded-2xl  relative font-Ubuntu '>
                 <div className=' p-8 flex justify-around items-center'>
                     <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
                     <div className='basis-1/3 text-center'>
@@ -115,12 +120,12 @@ const Home = () => {
 
                 </div>
                 <div className='px-12 py-6 '>
-                    <Blockslider card1={card1} />
+                    <Blockslider />
                 </div>
             </div>
 
             {/* fifth container */}
-            <div className='flex-col bg-sky-50 '>
+            <div className='flex-col bg-sky-50 font-Ubuntu'>
                 <div className=' p-8 flex justify-around items-center'>
                     <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
                     <div className='basis-1/3 text-center'>
@@ -130,17 +135,17 @@ const Home = () => {
 
                 </div>
                 <div className='flex'>
-                {
-                  ObjectS.map((e , index)=>(
-                     <SaleCard key={index} img={e.img} p={e.p} oldP={e.oldP} sP={e.sP} />
-                  ))
-                }
-                    
+                    {
+                        ObjectS.map((e, index) => (
+                            <SaleCard key={index} img={e.img} p={e.p} oldP={e.oldP} sP={e.sP} />
+                        ))
+                    }
+
                 </div>
             </div>
 
             {/*sixth container  */}
-            <div className='flex-col bg-sky-50 '>
+            <div className='flex-col bg-sky-50 font-Ubuntu'>
                 <div className=' p-8 flex justify-around items-center'>
                     <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
                     <div className='basis-1/3 text-center'>
@@ -150,26 +155,39 @@ const Home = () => {
 
                 </div>
                 <div className='flex'>
-                   <div className='overflow-hidden group m-6' >
-                    <a href="/wall-art"><img className='transition-all ease-in duration-150 group-hover:scale-105 w-full ' src={pimg1} alt="" /></a>
-                   </div>
-                   <div className='overflow-hidden group m-6' >
-                    <a href="/wall-art"><img className='transition-all ease-in duration-150 group-hover:scale-105 w-full ' src={pimg2} alt="" /></a>
-                   </div>
-                   <div className='overflow-hidden group m-6' >
-                    <a href="/wall-art"><img className='transition-all ease-in duration-150 group-hover:scale-105 w-full ' src={pimg3} alt="" /></a>
-                   </div>
-                   <div className='overflow-hidden group m-6' >
-                    <a href="/wall-art"><img className='transition-all ease-in duration-150 group-hover:scale-105 w-full ' src={pimg4} alt="" /></a>
-                   </div>
+                    <div className='overflow-hidden group m-6' >
+                        <a href="/wall-art"><img className='transition-all ease-in duration-150 group-hover:scale-105 w-full ' src={pimg1} alt="" /></a>
+                    </div>
+                    <div className='overflow-hidden group m-6' >
+                        <a href="/wall-art"><img className='transition-all ease-in duration-150 group-hover:scale-105 w-full ' src={pimg2} alt="" /></a>
+                    </div>
+                    <div className='overflow-hidden group m-6' >
+                        <a href="/wall-art"><img className='transition-all ease-in duration-150 group-hover:scale-105 w-full ' src={pimg3} alt="" /></a>
+                    </div>
+                    <div className='overflow-hidden group m-6' >
+                        <a href="/wall-art"><img className='transition-all ease-in duration-150 group-hover:scale-105 w-full ' src={pimg4} alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div className='flex-col bg-sky-50 font-Ubuntu py-4'>
+                <div className=' p-8 flex justify-around items-center'>
+                    <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
+                    <div className='basis-1/3 text-center'>
+                        <h1 className='font-bold text-3xl'>Customers Review</h1>
+                    </div>
+                    <div className='basis-1/3 bg-blue-950 h-1 P-0 '></div>
+
+                </div>
+                <div>
+                    <CustomersR/>
                 </div>
             </div>
 
             {/* seventh container */}
             <div className='bg-sky-50 p-6'>
-                 <div>
+                <div>
                     {/* <Reveue/> */}
-                 </div>
+                </div>
             </div>
 
 
